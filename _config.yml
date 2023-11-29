@@ -1,0 +1,13 @@
+lang: en-US
+color_scheme: light dark
+title: yuuki's blog
+license_url: https://creativecommons.org/licenses/by-sa/4.0/
+
+permalink: /blog/:title
+
+collections:
+  pages:
+    output: true
+    permalink: /:title/
+
+remote_theme: jekyll-theme-plain-text/jekyll-theme-plain-text
