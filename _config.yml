@@ -1,6 +1,5 @@
-lang: en-US
-color_scheme: light dark
 title: yuuki's blog
+url: https://yuukikonno.com
 license_url: https://creativecommons.org/licenses/by-sa/4.0/
 
 permalink: /blog/:title
@@ -10,4 +9,12 @@ collections:
     output: true
     permalink: /:title/
 
-remote_theme: jekyll-theme-plain-text/jekyll-theme-plain-text
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: plain-text-post
+
+remote_theme: jekyll-theme-blank/jekyll-theme-blank
