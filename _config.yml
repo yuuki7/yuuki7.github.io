@@ -1,6 +1,15 @@
-title: yuuki's blog
+remote_theme: jekyll-theme-plain/jekyll-theme-plain
+
+title: yuuki
 url: https://yuukikonno.com
 license_url: https://creativecommons.org/licenses/by-sa/4.0/
+stylesheets:
+  - base.css
+
+exclude:
+  - Gemfile*
+  - LICENSE*
+  - README*
 
 permalink: /blog/:title
 
@@ -10,11 +19,14 @@ collections:
     permalink: /:title/
 
 defaults:
-  -
-    scope:
+  - scope:
+      path: ""
+    values:
+      layout: base
+  - scope:
       path: ""
       type: posts
     values:
-      layout: plain-text-post
-
-remote_theme: jekyll-theme-blank/jekyll-theme-blank
+      layout: post
+      stylesheets:
+        - post.css

@@ -1,5 +1,4 @@
 ---
-date: '2023-05-28 03:14:00 +0000'
 ---
 
 Source of the Japanese lyrics: https://oshu-esashi.com/jinku/words.html
@@ -33,7 +32,7 @@ The most graceful will become my bride [^5]
 
 四、めでたうれしや　思ふことかのうた　（チョイサノサッサ　チョイサノサッサ）
 medeta ureshi ya omou koto kanouta
-How auspicious, how happy I am, my dreams come true
+How auspicious, how happy I am, my dream came true
 
 　　四つのすみから　アリャ黄金わく　（チョイサノサッサ　チョイサノサッサ）
 yotsu no sumi kara arya kogane waku
@@ -51,10 +50,10 @@ Is famous for its flavorful rice
 References
 ----------
 
-* Embree, John Fee (1939). Suye mura: a Japanese village. https://openlibrary.org/books/OL26571958M/Suye_mura
-* Hughes, David Weirick (2008). Traditional folk song in modern Japan: sources, sentiment and society. https://www.academia.edu/43280203/Chapter_2_Song_and_music_in_the_traditional_village
-* Shores, Matthew Wayne (2014). A critical study of kamigata rakugo and its traditions. https://hdl.handle.net/10125/100366
-* Yusa, Michiko (2012). "An advaitic matter: pebbles speak". CIRPIT Review 3 (2012, Supplement): 99-115. https://www.raimon-panikkar.it/wp-content/uploads/2019/09/214.pdf
+* Embree, John Fee (1939).  Suye mura: a Japanese village.  https://openlibrary.org/books/OL26571958M/Suye_mura
+* Hughes, David Weirick (2008).  Traditional folk song in modern Japan: sources, sentiment and society.  https://www.academia.edu/43280203/Chapter_2_Song_and_music_in_the_traditional_village
+* Shores, Matthew Wayne (2014).  A critical study of kamigata rakugo and its traditions.  https://hdl.handle.net/10125/100366
+* Yusa, Michiko (2012).  "An advaitic matter: pebbles speak".  CIRPIT Review 3 (2012, Supplement): 99-115.  https://www.raimon-panikkar.it/wp-content/uploads/2019/09/214.pdf
 
 
 [^1]: Embree (1939), p. 275.

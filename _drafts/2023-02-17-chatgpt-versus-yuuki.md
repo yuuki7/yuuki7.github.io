@@ -1,18 +1,17 @@
 ---
-date: '2023-02-17 12:16:00 00:00'
 ---
 
-On February 16, 2023, I became the first human being to play a complete game of shogi (Japanese chess) against ChatGPT. I listed all the legal moves on each ChatGPT's turn and let them choose their move. I uploaded the game (kifu) to Lishogi https://lishogi.org/pma1myEC and Shogi Playground https://kifu.co/Zw7L (also included at the end of this paper).
+On February 16, 2023, I became the first human being to play a complete game of shogi against ChatGPT.  I listed all the legal moves on each ChatGPT's turn using python-shogi and let them choose their move.  I uploaded the game to Lishogi https://lishogi.org/pma1myEC and Shogi Playground https://kifu.co/Zw7L (also included at the end of this article).
 
 How I played against ChatGPT
 ----------------------------
 
-My MacOS had the `python3` command installed. I installed the python-shogi library and used the Python shell to input and generate moves:
+My MacOS had the `python3` command installed.  I installed the python-shogi library and generated the moves in the Python shell:
 
     % pip3 install python-shogi
     % python3
 
-First I loaded the library and generated the 30 possible first moves in random order:
+First, I loaded the library and generated the 30 possible first moves in random order:
 
     >>> import shogi; from random import shuffle; board = shogi.Board()
     >>> moves = list(map(str, board.legal_moves)); shuffle(moves); print(*moves, sep=", ")
@@ -20,7 +19,7 @@ First I loaded the library and generated the 30 possible first moves in random o
 
 Then I prompted ChatGPT with the following:
 
-    Let's play shogi. For each of your turns, I will list all the legal moves you can play in random order, in Universal Shogi Interface (USI) format. Choose one of them. Say only the move you want to play. Don't say anything else. No handicap, even game. You are black (sente, the player who moves first).
+    Let's play shogi.  For each of your turns, I will list all the legal moves you can play in random order, in Universal Shogi Interface (USI) format.  Choose one of them.  Say only the move you want to play.  Don't say anything else.  No handicap, even game.  You are black (sente, the player who moves first).
 
     Your possible moves are: 9g9f, 7i7h, 2h7h, 5i4h, 3g3f, 7g7f, 6i5h, 2g2f, 3i3h, 8g8f, 4i4h, 7i6h, 2h6h, 5g5f, 5i5h, 6g6f, 3i4h, 4i5h, 1i1h, 2h4h, 2h3h, 2h5h, 9i9h, 4i3h, 2h1h, 6i6h, 4g4f, 5i6h, 1g1f, 6i7h
 
@@ -28,7 +27,7 @@ ChatGPT replied:
 
     2g2f
 
-After some thought, I decided to respond with 3c3d. I entered their move and mine into python-shogi, displayed the resulting position, and generated the next possible moves for ChatGPT in random order:
+After some thought, I decided to respond with 3c3d.  I entered their move and mine into python-shogi, displayed the resulting position, and generated the next possible moves for ChatGPT in random order:
 
     >>> board.push_usi("2g2f"); board.push_usi("3c3d"); print(board); moves = list(map(str, board.legal_moves)); shuffle(moves); print(*moves, sep=", ")
     Move.from_usi('2g2f')
@@ -50,16 +49,16 @@ Then I replied to ChatGPT:
 
     Your possible moves are: 5i5h, 2h2g, 3i3h, 7i6h, 2h7h, 8g8f, 2h6h, 6i6h, 2h5h, 1g1f, 3i4h, 7g7f, 5i6h, 6i7h, 9g9f, 2h1h, 2h3h, 4i5h, 2f2e, 3g3f, 6g6f, 6i5h, 9i9h, 4i4h, 4i3h, 5g5f, 4g4f, 5i4h, 2h4h, 1i1h, 7i7h
 
-I repeated this process. I ended up also saying
+I repeated this process.  I ended up also saying
 
-    It's your turn. Don't list moves. That's what I do. Say only the move you want to play. Don't say anything else. Choose one of them.
+    It's your turn.  Don't list moves.  That's what I do.  Say only the move you want to play.  Don't say anything else.  Choose one of them.
 
-every time. (Sometimes they started listing moves or responded as if I was consulting them about moves.) I created a shared link to the chat https://chat.openai.com/share/f406a004-ca2c-449d-b2ca-869f722dd458 and also uploaded the log to Pastebin https://pastebin.com/7qirN6mp. [^1]
+every time.  I created a shared link to the chat https://chat.openai.com/share/f406a004-ca2c-449d-b2ca-869f722dd458 (also uploaded to Pastebin https://pastebin.com/7qirN6mp). [^1]
 
 The game
 --------
 
-I uploaded the game to Lishogi etc. as linked at the beginning. Below can be read by GNU XShogi.
+I uploaded the game to Lishogi etc. as linked at the beginning.  Below can be read by GNU XShogi.
 
     # xshogi game file
     #
@@ -71,9 +70,9 @@ I uploaded the game to Lishogi etc. as linked at the beginning. Below can be rea
     21. 6e7d 7c7d 22. P*9g 3e4f 23. 7g8g P*4g 24. 3h4g 4f4g 25. 5h5g 4g4h
     26. 5g6h B*5i 27. 6h6i B*4g 28. 6i7h R*5h 29. 7h6i 5h6h+
 
-To install XShogi on MacOS Monterey, install Homebrew and run `brew install xshogi`. However, when I run `xshogi`, I got "Error: Can't open display: ". I have to install XQuartz with `brew install --cask xquartz`, launch it from Launchpad, go to Applications > Customize... to open the X11 Application Menu, press Add Item, add the `xshogi` command with the name "XShogi" (or whatever), and go to Applications > XShogi to launch it.
+To install XShogi on MacOS Monterey, install Homebrew and run `brew install xshogi`.  However, when I run `xshogi`, I got "Error: Can't open display: ".  I had to install XQuartz with `brew install --cask xquartz`, launch it from Launchpad, go to Applications > Customize... to open the X11 Application Menu, press Add Item, add the `xshogi` command with the name "XShogi" (or whatever), and go to Applications > XShogi to launch it.
 
 
-[^1]: It was generated by running the following JavaScript code in the Brave (i.e., Chromium) console on the chat page. As of ChatGPT Feb 13 version it renders the conversation into div elements with the `whitespace-pre-wrap` class. (This may not work in the future.)
+[^1]: The log uploaded to Pastebin was generated by running the following JavaScript code in the Brave (i.e., Chromium) console on the chat page.  As of the ChatGPT Feb 13 version, it renders the conversation in div elements with the `whitespace-pre-wrap` class.  (This may not work in the future.)
 
         copy([document.title, ...$$(".whitespace-pre-wrap").map((x, i) => `${i % 2 ? "ChatGPT" : "yuuki"}:\n${x.innerText}`)].join("\n\n---\n\n"))
