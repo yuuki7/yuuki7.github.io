@@ -1,28 +1,23 @@
 remote_theme: jekyll-theme-plain/jekyll-theme-plain
 
+lang: en-US
 title: yuuki
 url: https://yuukikonno.com
 license_url: https://creativecommons.org/licenses/by-sa/4.0/
 stylesheets:
-  - base.css
+  - default.css
 
-exclude:
-  - Gemfile*
-  - LICENSE*
-  - README*
-
-permalink: /blog/:title
-
+# Page permalinks
 collections:
   pages:
     output: true
     permalink: /:title/
 
+# Post permalinks
+permalink: /blog/:title
+
+# Front matter defaults for posts
 defaults:
-  - scope:
-      path: ""
-    values:
-      layout: base
   - scope:
       path: ""
       type: posts
@@ -30,3 +25,7 @@ defaults:
       layout: post
       stylesheets:
         - post.css
+      title: "" # sets the URL as the title
+
+include:
+  - .nojekyll

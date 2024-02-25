@@ -55,7 +55,6 @@ References
 * Shores, Matthew Wayne (2014).  A critical study of kamigata rakugo and its traditions.  https://hdl.handle.net/10125/100366
 * Yusa, Michiko (2012).  "An advaitic matter: pebbles speak".  CIRPIT Review 3 (2012, Supplement): 99-115.  https://www.raimon-panikkar.it/wp-content/uploads/2019/09/214.pdf
 
-
 [^1]: Embree (1939), p. 275.
 [^2]: Hughes (2008), p. 78.
 [^3]: Yusa (2012), p. 114.
