@@ -1,4 +1,0 @@
-[submodule "flash"]
-	path = flash
-	url = https://github.com/yuuki15/flash.git
-	branch = main
