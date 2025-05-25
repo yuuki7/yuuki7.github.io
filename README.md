@@ -1,10 +1,12 @@
 # [yuukikonno.com](https://yuukikonno.com/)
 
+yuuki's home page
+
 ## Hosts
 
 * [yuuki15.github.io](https://yuuki15.github.io/)
 * [yuukikonno.netlify.app](https://yuukikonno.netlify.app/)
-* [yuukikonno.pages.dev](https://yuukikonno.pages.dev/) (where the domain points to)
+* [yuukikonno.pages.dev](https://yuukikonno.pages.dev/) (primary)
 * [yuukikonno.vercel.app](https://yuukikonno.vercel.app/)
 
 ## Archives

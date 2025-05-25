@@ -1,3 +1,9 @@
+[submodule "calc"]
+	path = calc
+	url = https://github.com/yuuki15/calc.git
+[submodule "drawpoint"]
+	path = drawpoint
+	url = https://github.com/yuuki15/drawpoint.git
 [submodule "flash"]
 	path = flash
 	url = https://github.com/yuuki15/flash.git
