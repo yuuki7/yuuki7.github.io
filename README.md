@@ -1,5 +1,7 @@
 # [yuukikonno.com](https://yuukikonno.com/)
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/yuuki15/yuuki15.github.io)
+
 yuuki's home page
 
 ## Hosts
