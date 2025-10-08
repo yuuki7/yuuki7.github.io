@@ -8,7 +8,7 @@ yuuki's personal site
 
 * [yuuki7.github.io](https://yuuki7.github.io/)
 * [yuukikonno.netlify.app](https://yuukikonno.netlify.app/)
-* [yuukikonno.pages.dev](https://yuukikonno.pages.dev/) (primary)
+* [yuukikonno.pages.dev](https://yuukikonno.pages.dev/) (where the domain points to)
 * [yuukikonno.vercel.app](https://yuukikonno.vercel.app/)
 
 ## Archives
