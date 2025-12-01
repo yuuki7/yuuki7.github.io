@@ -6,5 +6,6 @@
 
 * Cloudflare Pages: [yuukikonno.pages.dev](https://yuukikonno.pages.dev) (domain points here)
 * GitHub Pages: [yuuki7.github.io](https://yuuki7.github.io)
+* GitLab Pages: [yuuki.gitlab.io](https://yuuki.gitlab.io)
 * Netlify: [yuukikonno.netlify.app](https://yuukikonno.netlify.app)
 * Vercel: [yuukikonno.vercel.app](https://yuukikonno.vercel.app)
