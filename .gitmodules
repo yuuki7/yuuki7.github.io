@@ -1,3 +1,6 @@
 [submodule "flash"]
 	path = flash
 	url = https://github.com/yuuki7/flash.git
+[submodule "wiki"]
+	path = wiki
+	url = git@github.com:yuuki7/wiki.git
